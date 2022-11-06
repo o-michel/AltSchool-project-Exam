@@ -1,0 +1,139 @@
+*{
+    box-sizing: border-box
+    ;
+}
+body{
+    background-image: radial-gradient(#b0b5cf, white);
+    background-color: aliceblue;
+    display: flexbox;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    position: relative;
+    /* max-width: 700px; */
+}
+
+/* responsiveness */
+@media (max-width: 660px) {
+    body{
+        width: 30%;
+        /* height: 100%; */
+        margin: auto;
+    }
+    
+}
+
+.container{
+    border: 0.3px solid black;
+    display: inline-block;
+}
+
+input{
+    background-color: #b0b5cf;
+    box-shadow: outset -4px -4px 10px rgba(128, 128, 128, 0.608), outset 4px 4px 10px rrgba(128, 128, 128, 0.608); 
+    border-color: rgba(128, 128, 128, 0.608);
+    border-top-style: groove;
+    border-left-style: groove;
+    border-top-right-radius: 4px;
+    border-top-left-radius: 4px;
+    padding: 1rem;
+    font-size: 1rem;
+    font-weight: bold;
+    width: 100%;
+}
+
+table{
+    text-align: center;
+}
+
+td{
+    border: 2px solid rgba(7, 7, 7, 0.537);
+    background-color: rgba(128, 128, 128, 0.608);
+}
+/* td:hover{
+    outline-style: double;
+} */
+
+td .on-off{
+    background-color: darkred;
+    color: aquamarine;
+    
+}
+td .del{
+    background-color: aquamarine;
+}
+td .del:hover,
+td .equal:hover{
+    outline-style: double;
+    outline-color: aliceblue;
+    box-shadow: box-shadow: 0 0 4px aliceblue;;
+}
+td .equal{
+    background-color: aqua;
+    font-size: 20px;
+    padding: 8;
+    border: 0.1px solid aqua;
+    box-shadow: 0 0 1px aqua;
+    /* margin: 0; */
+}
+td .equal:hover{
+    outline-style: none;
+    outline-color: rgb(206, 133, 133);
+    transform: scale(1.8);
+    
+}
+
+@media (max-width:760px) {
+    td .equal:hover{
+        outline-style: none;
+        outline-color: rgb(206, 133, 133);
+        transform: scale(1.1);
+    }
+    
+}
+
+td #eq{
+    background-color: red; !important
+    z-index: 2;
+}
+
+td .on-off:hover{
+    outline-style: double;
+}
+
+button{
+    border-radius: 10%;
+    /* border: none; */
+    outline: none;
+    box-shadow: 0 0 4px blue;
+    padding: 1rem;
+    margin: 1.5rem;
+    font-size: 1rem;
+}
+
+button:hover{
+    outline-style: double;
+}
+
+@media (max-width: 760px) {
+    button{
+        width: 100%;
+        margin: auto;
+        padding: 0.8rem;
+        /* margin: .1rem; */
+        font-size: .8rem;
+        font-weight: bolder;
+
+    }
+    
+}
+
+#eq{
+    background-color: aqua;
+}
+
+#eq:hover{
+    border: 2px dotted rgb(1, 1, 45);
+}

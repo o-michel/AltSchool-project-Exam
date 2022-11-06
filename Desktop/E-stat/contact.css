@@ -1,0 +1,121 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body{
+    background-image: radial-gradient(#b0b5cf, white);
+    background-color: aliceblue;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    height: 100vh;
+    color: aliceblue;
+    
+}
+
+section{
+    
+}
+
+.container{
+    
+    color: rgb(45, 43, 1);
+    width: 80%;
+    height: 70%;
+    max-width: 500px;
+    /* border: 4px solid black; */
+    margin: 0 auto;
+    padding: 20px;
+    box-shadow: 0px 0px 10px #b0b5cf;
+    border-radius: 100px;
+    margin-bottom: 20px;
+}
+
+#form-group{
+    width: 100%;
+    margin-top: 20px;
+    font-size: 20px;
+}
+#form-group input,
+#form-group textarea{
+    border-style: outset;
+    border-top-style: ridge;
+    border-radius: 6px;
+    font-family: 'Courier New', Courier, monospace;
+    color:  rgb(45, 43, 1);
+    font-weight: bolder;
+    background-color: #b0b5cf;
+    width: 100%;
+    padding: 10px;
+    box-shadow: outset -4px -4px 10px  rgb(45, 43, 1), outset 4px 4px 10px  rgb(45, 43, 1); 
+    outline: none;
+
+}
+
+
+#form-group textarea{
+    resize: vertical;
+}
+
+/* priority */
+#form-group select {
+    padding: 7px 11px;
+    background-color: inherit;
+    border: 1px solid inherit;
+    margin: 5px;
+    color: gray;
+    font-size: 17px;
+    font-weight: bolder;
+    outline: none;
+    border-style: inset;
+}
+
+#form-group select:hover{
+    border-style: outset;
+}
+
+#form-group select option{
+    background-color: #b0b5cf;
+    border-style: outset;
+    
+    
+}
+
+ input[type="submit"]{
+    padding: 7px;
+    position: relative;
+    left: 50%;
+    transform: translateX(-50%);
+    background-color: inherit;
+    border: 2px outset rgba(2, 20, 51, 0.376) ;
+    border-radius: 3px;
+    margin-top: 10px;
+}
+
+input[type="submit"]:hover{
+    background-color:  rgba(106, 106, 175, 0.17);
+    color: #b0b5cf;
+    font-size: 17px;
+    padding: 8px;
+    transition: all .2s ease-in;
+    border-radius: 5px;
+  
+}
+
+
+button{
+    align-items: center;
+    margin: auto;
+    display: grid;
+    background-color: #b0b5cf;
+}
+
+button a{
+    padding: 5px 40px;
+    text-decoration: none;
+    font-weight: bolder;
+    font-size: 15px;
+}
